@@ -83,7 +83,7 @@
     <div class="row">
     <div class="col-md-10">
       <div class="form-group">
-        <Input @type="text" class="form-control" @placeholder={{if @canShowPlaceHolder "eg: www.urbanpro.com"}} @value={{@row.link}} />
+        <Input @type="text" class="form-control" @placeholder={{if @canShowPlaceHolder "eg: http://www.urbanpro.com"}} @value={{@row.link}} />
       </div>
     </div>
     <div class="col-md-2" {{on "click" @handleRowDeletion}}>
@@ -93,8 +93,8 @@
   
   */
   {
-    id: "6D9cFj4q",
-    block: "{\"symbols\":[\"@canShowPlaceHolder\",\"@row\",\"@handleRowDeletion\"],\"statements\":[[7,\"div\",true],[10,\"class\",\"row\"],[8],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"col-md-10\"],[8],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"form-group\"],[8],[0,\"\\n      \"],[5,\"input\",[[12,\"class\",\"form-control\"]],[[\"@type\",\"@placeholder\",\"@value\"],[\"text\",[28,\"if\",[[23,1,[]],\"eg: www.urbanpro.com\"],null],[23,2,[\"link\"]]]]],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"div\",false],[12,\"class\",\"col-md-2\"],[3,\"on\",[\"click\",[23,3,[]]]],[8],[0,\"\\n    remove\\n  \"],[9],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
+    id: "ugyBiv9Y",
+    block: "{\"symbols\":[\"@canShowPlaceHolder\",\"@row\",\"@handleRowDeletion\"],\"statements\":[[7,\"div\",true],[10,\"class\",\"row\"],[8],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"col-md-10\"],[8],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"form-group\"],[8],[0,\"\\n      \"],[5,\"input\",[[12,\"class\",\"form-control\"]],[[\"@type\",\"@placeholder\",\"@value\"],[\"text\",[28,\"if\",[[23,1,[]],\"eg: http://www.urbanpro.com\"],null],[23,2,[\"link\"]]]]],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"div\",false],[12,\"class\",\"col-md-2\"],[3,\"on\",[\"click\",[23,3,[]]]],[8],[0,\"\\n    remove\\n  \"],[9],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
     meta: {
       moduleName: "fev-friend/components/website-row.hbs"
     }
@@ -711,8 +711,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "/bomePpV",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"div\",true],[10,\"class\",\"product\"],[8],[0,\"\\n  \"],[1,[22,\"outlet\"],false],[0,\"\\n\"],[9]],\"hasEval\":false}",
+    "id": "QuIN4UT1",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"div\",true],[10,\"class\",\"product\"],[8],[0,\"\\n  \"],[7,\"div\",true],[10,\"style\",\"margin-bottom: 20px;\"],[8],[0,\"\\n    \"],[7,\"img\",true],[10,\"src\",\"/DevFrnd.png\"],[10,\"alt\",\"Developer Friend\"],[10,\"width\",\"30px\"],[10,\"style\",\"vertical-align: text-bottom;\"],[8],[9],[0,\"\\n    \"],[7,\"span\",true],[10,\"style\",\"font-family: cursive; font-size: 24px; font-weight: bold;\"],[8],[0,\"Developer Friend\"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[1,[22,\"outlet\"],false],[0,\"\\n\"],[9]],\"hasEval\":false}",
     "meta": {
       "moduleName": "fev-friend/templates/application.hbs"
     }
@@ -729,8 +729,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "dsZaBM99",
-    "block": "{\"symbols\":[\"row\",\"position\"],\"statements\":[[7,\"form\",true],[8],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"form-group\"],[8],[0,\"\\n    \"],[7,\"label\",true],[10,\"for\",\"CustomTitle\"],[8],[0,\"Title\"],[9],[0,\"\\n    \"],[5,\"input\",[[12,\"class\",\"form-control\"]],[[\"@type\",\"@id\",\"@placeholder\"],[\"text\",\"CustomTitle\",\"eg: My Choice\"]]],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"h4\",true],[8],[0,\"Website Link\"],[9],[0,\"\\n\"],[4,\"each\",[[23,0,[\"WebsiteRowList\"]]],null,{\"statements\":[[0,\"    \"],[5,\"website-row\",[],[[\"@row\",\"@handleRowDeletion\",\"@canShowPlaceHolder\"],[[23,1,[]],[28,\"fn\",[[23,0,[\"handleRowDeletion\"]],[23,2,[]]],null],[28,\"if\",[[28,\"eq\",[[23,2,[]],0],null],true,false],null]]]],[0,\"\\n\"]],\"parameters\":[1,2]},null],[0,\"  \"],[7,\"div\",false],[12,\"class\",\"form-group\"],[3,\"on\",[\"click\",[23,0,[\"handleRowAddition\"]]]],[8],[0,\"\\n    Add\\n  \"],[9],[0,\"\\n\\n  \"],[7,\"button\",false],[12,\"class\",\"btn btn-warning\"],[12,\"type\",\"button\"],[3,\"on\",[\"click\",[23,0,[\"addRecord\"]]]],[8],[0,\"\\n    Add Record\\n  \"],[9],[0,\"\\n\\n\\n\"],[9]],\"hasEval\":false}",
+    "id": "txeaO2HN",
+    "block": "{\"symbols\":[\"row\",\"position\"],\"statements\":[[7,\"form\",true],[8],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"form-group\"],[8],[0,\"\\n    \"],[7,\"label\",true],[10,\"for\",\"CustomTitle\"],[8],[0,\"Title\"],[9],[0,\"\\n    \"],[5,\"input\",[[12,\"class\",\"form-control\"]],[[\"@type\",\"@id\",\"@placeholder\"],[\"text\",\"CustomTitle\",\"eg: My Choice\"]]],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"h4\",true],[8],[0,\"Website Link\"],[9],[0,\"\\n\"],[4,\"each\",[[23,0,[\"WebsiteRowList\"]]],null,{\"statements\":[[0,\"    \"],[5,\"website-row\",[],[[\"@row\",\"@handleRowDeletion\",\"@canShowPlaceHolder\"],[[23,1,[]],[28,\"fn\",[[23,0,[\"handleRowDeletion\"]],[23,2,[]]],null],[28,\"if\",[[28,\"eq\",[[23,2,[]],0],null],true,false],null]]]],[0,\"\\n\"]],\"parameters\":[1,2]},null],[0,\"  \"],[7,\"div\",false],[12,\"class\",\"form-group\"],[3,\"on\",[\"click\",[23,0,[\"handleRowAddition\"]]]],[8],[0,\"\\n    Add more row\\n  \"],[9],[0,\"\\n\\n  \"],[7,\"button\",false],[12,\"class\",\"btn btn-warning\"],[12,\"type\",\"button\"],[3,\"on\",[\"click\",[23,0,[\"addRecord\"]]]],[8],[0,\"\\n    Add Record\\n  \"],[9],[0,\"\\n\\n\\n\"],[9]],\"hasEval\":false}",
     "meta": {
       "moduleName": "fev-friend/templates/home.hbs"
     }

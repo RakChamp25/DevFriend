@@ -67,7 +67,7 @@ define("fev-friend/tests/lint/templates.template.lint-test", [], function () {
   QUnit.module('TemplateLint');
   QUnit.test('fev-friend/templates/application.hbs', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'fev-friend/templates/application.hbs should pass TemplateLint.\n\n');
+    assert.ok(false, 'fev-friend/templates/application.hbs should pass TemplateLint.\n\nfev-friend/templates/application.hbs\n  2:7  error  elements cannot have inline styles  no-inline-styles\n  3:64  error  elements cannot have inline styles  no-inline-styles\n  4:10  error  elements cannot have inline styles  no-inline-styles\n');
   });
   QUnit.test('fev-friend/templates/home.hbs', function (assert) {
     assert.expect(1);
