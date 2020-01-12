@@ -1,0 +1,23 @@
+<form>
+  <div class="form-group">
+    <label for="CustomTitle">Title</label>
+    <Input @type="text" class="form-control" @id="CustomTitle" @placeholder="eg: My Choice" />
+  </div>
+  <h4>Website Link</h4>
+  {{#each this.WebsiteRowList as |row position|}}
+    <WebsiteRow
+      @row={{row}}
+      @handleRowDeletion={{fn this.handleRowDeletion position}}
+      @canShowPlaceHolder={{if (eq position 0) true false}}
+    />
+  {{/each}}
+  <div class="form-group" {{on "click" this.handleRowAddition}}>
+    Add
+  </div>
+
+  <button type="button" class="btn btn-warning" {{on "click" this.addRecord}}>
+    Add Record
+  </button>
+
+
+</form>

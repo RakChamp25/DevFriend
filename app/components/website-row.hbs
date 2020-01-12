@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-10">
+    <div class="form-group">
+      <Input @type="text" class="form-control" @placeholder={{if @canShowPlaceHolder "eg: www.urbanpro.com"}} @value={{@row.link}} />
+    </div>
+  </div>
+  <div class="col-md-2" {{on "click" @handleRowDeletion}}>
+    remove
+  </div>
+</div>
