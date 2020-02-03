@@ -45,13 +45,17 @@
   "use strict";
 
   chrome.windows.onCreated.addListener(function () {
-    chrome.storage.local.get(['webList'], function (result) {
+    chrome.storage.sync.get(['webList'], function (result) {
       let {
         webList
       } = result;
-      webList.forEach(function (obj) {
-        chrome.tabs.create({
-          url: obj.link
+      (webList || []).forEach(function (obj) {
+        chrome.tabs.query({}, function (tabs) {
+          if (!tabs.find(tab => tab.url === obj.link)) {
+            chrome.tabs.create({
+              url: obj.link
+            });
+          }
         });
       });
     });
@@ -148,11 +152,12 @@
     }
 
     addRecord() {
-      chrome.storage.local.set({
+      chrome.storage.sync.set({
         "webList": this.WebsiteRowList
       }, function () {
-        console.log('Value is set ');
+        alert("Record Added");
       });
+      this.set('WebsiteRowList', [{}]);
     }
 
   }, _temp), (_applyDecoratedDescriptor(_class.prototype, "handleRowAddition", [Ember._action], Object.getOwnPropertyDescriptor(_class.prototype, "handleRowAddition"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "handleRowDeletion", [Ember._action], Object.getOwnPropertyDescriptor(_class.prototype, "handleRowDeletion"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "addRecord", [Ember._action], Object.getOwnPropertyDescriptor(_class.prototype, "addRecord"), _class.prototype)), _class);
@@ -813,7 +818,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("fev-friend/app")["default"].create({"name":"fev-friend","version":"0.0.0+0146cade"});
+            require("fev-friend/app")["default"].create({"name":"fev-friend","version":"0.0.0+23a3ec02"});
           }
         
 //# sourceMappingURL=fev-friend.map

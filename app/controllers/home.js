@@ -16,9 +16,10 @@ export default class HomeController extends Controller {
 
   @action
   addRecord() {
-    chrome.storage.local.set({"webList": this.WebsiteRowList}, function() {
-      console.log('Value is set ');
+    chrome.storage.sync.set({"webList": this.WebsiteRowList}, function() {
+      alert("Record Added");
     });
+    this.set('WebsiteRowList', [{}]);
   }
 
 }

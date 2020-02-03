@@ -46,11 +46,11 @@ define("fev-friend/tests/lint/app.lint-test", [], function () {
   });
   QUnit.test('background.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'background.js should pass ESLint\n\n2:1 - \'chrome\' is not defined. (no-undef)\n3:3 - \'chrome\' is not defined. (no-undef)\n6:7 - \'chrome\' is not defined. (no-undef)');
+    assert.ok(false, 'background.js should pass ESLint\n\n2:1 - \'chrome\' is not defined. (no-undef)\n3:3 - \'chrome\' is not defined. (no-undef)\n6:7 - \'chrome\' is not defined. (no-undef)\n8:11 - \'chrome\' is not defined. (no-undef)');
   });
   QUnit.test('controllers/home.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'controllers/home.js should pass ESLint\n\n19:5 - \'chrome\' is not defined. (no-undef)\n20:7 - Unexpected console statement. (no-console)');
+    assert.ok(false, 'controllers/home.js should pass ESLint\n\n19:5 - \'chrome\' is not defined. (no-undef)');
   });
   QUnit.test('router.js', function (assert) {
     assert.expect(1);
