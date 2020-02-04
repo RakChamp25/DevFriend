@@ -10,14 +10,12 @@
   },
   "background": {
     "scripts": ["background.js"],
-    "persistent": true 
+    "persistent": false 
   },
   "options_page": "index.html",
   "permissions": [
     "storage",
     "tabs",
-    "contextMenus",
-    "<all_urls>",
-    "https://*/*"
+    "<all_urls>"
   ]
 }

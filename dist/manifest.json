@@ -16,8 +16,6 @@
   "permissions": [
     "storage",
     "tabs",
-    "contextMenus",
-    "<all_urls>",
-    "https://*/*"
+    "<all_urls>"
   ]
 }
